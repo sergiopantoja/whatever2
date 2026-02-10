@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  background: rgba(0,0,0,0.25);
+  border-radius: 0.5rem;
+}
+
+nav {
+  padding: 1rem 0;
+}
+
+nav > a {
+  padding: 1rem;
+  background: rgba(0,0,0,0.25);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+nav > a:hover {
+  background: rgba(0,0,0,0.5);
+  color: white;
+}
+
+main {
+  display: flex;
+  gap: 1rem;
+
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  background: rgba(0,0,0,0.25);
+  border-radius: 0.5rem;
+}
+
+section {
+  flex-grow: 1;
+}
+
+aside {
+  max-width: 300px; /* or whatever size you want */
+  background: rgba(0,0,0,0.25);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+aside h2 {
+  font-size: 1.25rem;
+}
+
+footer {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0,0,0,0.25);
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  header, main {
+    flex-direction: column;
+  }
+
+  nav {
+    display: flex;
+    gap: 0.25rem;
+    padding-bottom: 0;
+  }
+
+  nav > a {
+    padding: 0.5rem;
+  }
+
+  aside {
+    max-width: 100%;
+  }
+}
